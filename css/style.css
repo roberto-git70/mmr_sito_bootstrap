@@ -6675,28 +6675,22 @@ Section Title
 ====================================================================
 
 ***/
-.vantaggi-azie { 
+.vantaggi-azie {
   position: relative;
-  padding: 120px 0 70px;
-  background-color: #000; /* <-- colore di fallback, nero */
+  padding: 120px 0 70px; /* aumentato il padding-top */
+  background-color: #000;
   background-image: url(../images/background/3.webp);
   background-repeat: no-repeat;
-  background-size: cover; /* <-- importantissimo per coprire tutta la sezione */
+  background-size: cover;
   background-position: center center;
+  z-index: 1;
+}
+
+.vantaggi-azie .sec-title h2 {
+  margin-top: 40px; /* distacco visivo dal bordo superiore */
 }
 
 
-.vantaggi-azie::before {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-image: url(../images/icons/shape.png);
-  content: "";
-}
 .vantaggi-azie .sec-title {
   margin-bottom: 50px;
 }
@@ -7760,6 +7754,37 @@ Section Title
 .contact-info-block-three .inner-box .num {
   color: #ffffff;
 }
+
+
+/* Pulsanti form contatti */
+.pulsanti-responsive {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spazio tra INVIA e CANCELLA */
+  flex-wrap: wrap;
+}
+
+.pulsanti-responsive button {
+  margin: 5px;
+  padding: 10px 20px;
+  min-width: 120px;
+}
+
+/* Mobile: disposizione verticale */
+@media (max-width: 768px) {
+  .pulsanti-responsive {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pulsanti-responsive button {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
 
 /***
 
