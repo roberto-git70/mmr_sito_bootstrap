@@ -4539,7 +4539,7 @@ Section Title
 .projects-section-two .upper-box .text {
   font-size: 18px;
   line-height: 36px;
-  color: #8f8f8f;
+  color: #e0e0e0; /* <-- colore più leggibile sullo sfondo scuro */
 }
 .projects-section-two .upper-box .numbers {
   font-size: 100px;
