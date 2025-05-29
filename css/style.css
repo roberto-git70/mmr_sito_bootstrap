@@ -2925,7 +2925,7 @@ Section Title
   background-position: center;
   background-size: cover;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .tp-bannertimer {
@@ -13137,3 +13137,4 @@ Sidebar
 .footer-bottom .copyright-text a:hover {
   color: #ffffff;
 }
+
