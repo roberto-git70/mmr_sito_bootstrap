@@ -7,7 +7,7 @@ tpj(document).ready(function () {
   } else {
     revapi = tpj("#rev_slider_one").show().revolution({
       sliderType: "standard",
-      jsFileLocation: "plugins/revolution/js/",
+      jsFileLocation: "plugins/revolution/js/source/",
       sliderLayout: "auto",
       delay: 10000,
       lazyType: "smart",
